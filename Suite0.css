@@ -1,0 +1,590 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+
+::-webkit-scrollbar-thumb {
+  background:#d76005; 
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  
+}
+#logo{
+  width: 5%;
+  height: 10%;
+  float: left;
+  margin-top: 6px;
+  transition: 0.4s;
+}
+#logodownR{
+float:right;
+width: 10%;
+height: 10%;
+margin-top: -125px;
+}
+#logodownL{
+float: left;
+width: 10%;
+height: 10%;
+margin-top: -125px;
+}
+#fox{
+color: rgb(254, 106, 0);
+margin-top: 28px;
+margin-left: 90px;
+}
+#Fox{
+  color: rgb(254, 106, 0);
+  text-align: center;
+  font-size: larger;
+  }
+.topnav {
+  background-color: rgb(18, 17, 17);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 100px;
+  margin-top: -35px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: rgb(52, 52, 52);
+  border-radius: 10px;
+  color: rgb(252, 130, 8);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: rgb(252, 130, 8);
+  cursor: pointer;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+#navbar{
+overflow: hidden;
+padding: 10px 5px; /* Large padding which will shrink on scroll (using JS) */
+transition: 0.5s; /* Adds a transition effect when the padding is decreased */
+position: fixed; /* Sticky/fixed navbar */
+width: 100%;
+top: 0; /* At the top */
+z-index: 99;
+}
+@media screen and (max-width: 580px) {
+  #topnav {
+    padding: 10px 5px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #topnav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #topnav-right {
+    float: none;
+  }
+}
+
+
+.container {
+  position: relative;
+  width: 90%;
+  top: 90px;
+  left: 70px;
+}
+.container1{
+ position: relative; 
+ width: 40%;
+ max-width: 750px;
+ top: 280px; 
+ left: 40px;
+}
+.container2{
+ position: relative; 
+ width: 40%;
+ max-width: 750px;
+ top: -139px; 
+ left: 850px;
+}
+.container3{
+  position: relative; 
+  width: 29%;
+  top: 60px; 
+  left: 37px;
+ }
+ .container4{
+  position: relative; 
+  width: 29%;
+  top: -244.5px; 
+  left: 545px;
+ }
+ .container5{
+  position: relative; 
+  width: 29%;
+  top: -549px; 
+  left: 1050px;
+ }
+
+ .container6{
+  position: relative; 
+  width: 40%;
+  max-width: 750px;
+  top: -340px; 
+  left: 40px;
+ }
+ .container7{
+  position: relative; 
+  width: 40%;
+  max-width: 750px;
+  top: -758px; 
+  left: 850px;
+ }
+ .container8 {
+  position: relative;
+  width: 90%;
+  top: -550px;
+  left: 70px;
+}
+ /* Make the image to responsive */
+
+.image00 {
+  display: block;
+  width: 100%;
+  height: 600px;
+ border-radius: 20px;
+ border: 3px solid blue;
+}
+.image1{
+ display: block;
+ width: 100%;
+ height: auto;
+ border-radius: 20px;
+ border: 3px solid lavenderblush;
+}
+.image2{
+  display: block;
+  width: 100%;
+  height: auto;
+ border-radius: 20px;
+ border: 3px solid magenta;
+}
+.image3{
+  display: block;
+  width: 100%;
+  height: auto;
+ border-radius: 20px;
+ border: 3px solid red;
+}
+.image4{
+  display: block;
+  width: 100%;
+  height: auto;
+ border-radius: 20px;
+ border: 3px solid yellow;
+}
+.image5{
+  display: block;
+  width: 100%;
+  height: auto;
+ border-radius: 20px;
+ border: 3px solid skyblue;
+}
+
+.overlay1 {
+position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  height: 25%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  transform: scale(0);
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container1:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container2:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container3:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container4:hover .overlay1 {
+ opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container5:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container6:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container7:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+.container8:hover .overlay1 {
+opacity: 1;
+transform: scale(1);  
+border-radius: 20px;
+border: 3px solid lightsteelblue;
+}
+
+footer{
+background-color: rgb(0, 0, 0);
+display: block;
+margin-top:-450px ;  
+height: 700px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+.footimg{
+  margin-top: 50px;
+  width: 100%;
+  height:400px;
+  }
+  .overlay0 {
+    position: absolute;
+    background: rgba(0,0,0, 0.6);  /* Black see-through */ 
+    width: 100%;
+    height: 410px;
+    transition: .5s ease;
+    opacity:2; 
+    font-size: 20px;
+    padding: 20px;
+    top: 479%;
+    transform: scale(1);
+    text-align: center;
+    border-radius: 20px;
+  }
+.overlay {
+  position: absolute;
+  background: rgba(0,0,0, 0.6);  /* Black see-through */ 
+  width: 100%;
+  height: 410px;
+  transition: .5s ease;
+  opacity:0; 
+  font-size: 20px;
+  padding: 20px;
+  top: 479%;
+  transform: scale(0);
+  text-align: center;
+  border-radius: 20px;
+}
+ 
+/**container and despaer
+**/
+.footimg:hover .overlay {
+  opacity: 2;
+  transform: scale(1); 
+  border-radius: 20px;
+  background: rgba(0,0,0, 0.8);  
+  border: 2px solid rgb(68, 47, 7);
+}
+
+
+
+
+.col {
+width: 190px;
+height: auto;
+float: left;
+box-sizing: border-box;
+padding: 20px;
+}
+.col h2 {
+margin: 0;
+padding: 0;
+font-size: 15px;
+line-height: 17px;
+padding: 10px 0;
+color: #FF0063;
+text-transform: uppercase;
+}
+.col ul {
+list-style-type: none;
+padding: 0;
+}
+.col ul li {
+color: white;
+font-size: 12px;
+padding: 5px 0px;
+}
+.address ul li {
+display: inline-block;
+padding-right: 5px !important;
+}
+
+.col ul li:hover {
+cursor: pointer;
+color: rgb(19, 142, 204);
+font-weight: bold;
+}
+.clearfix {
+clear: both;
+}
+@media only screen and (min-width: 1280px) {
+.contain {
+  width: 1200px;
+  margin: 0 auto;
+}
+}
+@media only screen and (max-width: 1139px) {
+.contain .address {
+  width: 1000px;
+  display: block;
+}
+.address h2 {
+  margin: 0px;
+}
+}
+@media only screen and (max-width: 950px) {
+.col {
+  width: 33%;
+}
+.col h2 {
+  font-size: 14px;
+}
+ .col ul li {
+  font-size: 13px;
+}
+}
+@media only screen and (max-width: 500px) {
+   .col {
+    width: 50%;
+  }
+   .col h2 {
+    font-size: 14px;
+  }
+   .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 340px) {
+ .col {
+  width: 100%;
+}
+}
+
+.foxx{
+line-height: 80px;
+}
+.foxx a{
+text-decoration: none;
+}
+.foxx2{
+margin-top: -140px;
+margin-left: 70%;
+
+}
+.foxx2 ul{
+list-style-type: none;
+padding-inline-start: 20px;
+} 
+#image0{
+width: 20%;
+height: 20%;
+border-radius: 10px;
+margin: 5px;
+border:#FF0063 solid 2px ;
+cursor: pointer;
+}
+#image0:hover{
+width: 20%;
+height: 20%;
+border-radius: 10px;
+margin: 5px;
+border:#00aeff solid 2px ;
+cursor: pointer;
+}
+
+.foxx3{
+margin-top: -116px;
+margin-Right: 75%;
+}
+.foxx3 ul {
+list-style-type: none;
+padding: 7px;
+}
+.foxx3 ul li{
+cursor: pointer;
+color: rgb(255, 255, 255);
+font-size: 12px;
+padding: 5px 0px;
+}
+.foxx3 ul li:hover{
+cursor: pointer;
+color: rgb(19, 142, 204);
+font-size: 12px;
+font-weight: bold;
+padding: 5px 0px;
+}
+#B1{
+text-decoration: none;
+color:#FF0063;
+background-color: black;
+border-radius: 10px;
+border: #d2d2d2 solid 2px;
+padding: 12px;
+cursor: pointer;
+transition: 1.2s;
+font-weight: bold;
+}
+#B1:hover{
+text-decoration: none;
+color:#0c0c0c;
+background-color: rgb(0, 255, 255);
+border-radius: 10px;
+border: #d2d2d2 solid 2px;
+padding: 12px;
+cursor: pointer;
+transition: 1.5s;
+font-weight: bold;
+}
+/**social icon on overlay**/
+
+
+/*content*/
+.footerr{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footerr p{
+  margin: 10px auto;
+  line-height: 65px;
+  font-size: 14px;
+}
+/*social -media*/
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1.5px solid white;
+  padding: 5px;
+  border-radius: 50%;
+}
+.socials a i{
+  font-size: 1.1rem;
+  width: 20px;
+  transition: color .4s ease;
+}
+.socials a:hover {
+text-decoration: none;
+  color:  rgb(255, 255, 255);
+  border: 1.5px solid rgb(230, 11, 120);
+  padding: 5px;
+  border-radius: 50%;
+}
+/* copyright*/
+.footerr-copyright{
+  background: #000;
+  width: 100vw;
+  padding: 20px 20px 50px 20px;
+}
+.footerr-copyright p{
+  font-size: 14px;
+  word-spacing: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#line {
+  width: 1000px;
+  left: 250px;
+  border-top: 2px solid rgb(172, 172, 172);
+  position: relative;
+  top: 70px;
+}
+#icon{
+text-align: center;
+margin-top: 70px;
+}
+#icon a {
+  font-size: 35px;
+  text-decoration: none;
+  margin: 25px;
+}
+
+#icons0{
+width: 2.5%;
+height:2%;
+}

@@ -1,0 +1,14 @@
+CREATE SEQUENCE seq_person
+MINVALUE 1
+START WITH 1
+INCREMENT BY 1
+CACHE 10;
+
+
+/*******/
+ALTER TABLE Persons AUTO_INCREMENT=100;
+
+
+/**********/
+
+ALTER TABLE document MODIFY COLUMN document_id INT auto_increment

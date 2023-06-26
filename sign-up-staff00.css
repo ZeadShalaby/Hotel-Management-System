@@ -1,0 +1,377 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #070707;
+    position: relative;
+    overflow: hidden;
+}
+.c-checkbox {
+    display: none;
+}
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form__toggle {
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.7);
+}
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form {
+    width: 382px;
+}
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) {
+    visibility: visible;
+    opacity: 1;
+}
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) .c-form__border {
+    width: 100%;
+}
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__border, .c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__next {
+    color: #f03;
+}
+.c-checkbox:nth-of-type(1):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) .c-form__input:required:valid ~ .c-form__next {
+    pointer-events: initial;
+    color: #2600ff;
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-form__progress {
+    width: calc(100vw / 3);
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) {
+    visibility: hidden;
+    opacity: 0;
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(1) .c-form__border {
+    width: 0;
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) {
+    visibility: visible;
+    opacity: 1;
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) .c-form__border {
+    width: 100%;
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__border, .c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__next {
+    color: #f03;
+}
+.c-checkbox:nth-of-type(2):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) .c-form__input:required:valid ~ .c-form__next {
+    pointer-events: initial;
+    color: #2600ff;
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-form__progress {
+    width: calc((100vw / 3) + 100vw / 3);
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) {
+    visibility: hidden;
+    opacity: 0;
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(2) .c-form__border {
+    width: 0;
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) {
+    visibility: visible;
+    opacity: 1;
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) .c-form__border {
+    width: 100%;
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__border, .c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) .c-form__input:not(:placeholder-shown):invalid ~ .c-form__next {
+    color: #f03;
+}
+.c-checkbox:nth-of-type(3):checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) .c-form__input:required:valid ~ .c-form__next {
+    pointer-events: initial;
+    color: #2600ff;
+}
+#finish:checked ~ .c-form__progress {
+    width: 100vw;
+}
+#finish:checked ~ .c-formContainer .c-form {
+    transition: opacity 0.2s 0.1s, transform 0.3s;
+    opacity: 0;
+    transform: translateX(50%) scaleX(0);
+}
+#finish:checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) {
+    transition: 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+#finish:checked ~ .c-formContainer .c-form .c-form__group:nth-child(3) .c-form__border {
+    width: 0;
+}
+#finish:checked ~ .c-formContainer .c-welcome {
+    opacity: 1;
+}
+.c-formContainer {
+    width: 180px;
+    height: 65px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.c-welcome {
+    position: absolute;
+    width: max-content;
+    height: inherit;
+    font-size: 40px;
+    color: #ec9405;
+    opacity: 0;
+    transition: 0.3s;
+    top:120px;
+    margin-left :2rem;
+}
+#true{
+border-radius: 100px;
+margin-left: 2.2rem;
+
+}
+
+.c-form {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background-color: #000000;
+    box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    border-top :2px solid rgb(0, 255, 60) ;
+    border-bottom:2px solid #ec9405;
+    border-left:2px solid #ec9405;
+    border-right :2px solid rgb(0, 255, 60) ;
+    top:-170px;
+    margin-left :2rem;
+}
+.c-form__toggle {
+    width: inherit;
+    height: inherit;
+    font-size: 18px;
+    color:  #01c5f1;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-form__toggleIcon {
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+    width: 15px;
+    height: 17px;
+}
+.c-form__toggleIcon::before, .c-form__toggleIcon::after {
+    content: "";
+    position: absolute;
+    background-color: #0d01f1;
+}
+.c-form__toggleIcon::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+.c-form__toggleIcon::after {
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+    border-radius: 7px 7px 0 0;
+}
+.c-form__group {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    transition: 0.2s 0.2s;
+    position: absolute;
+}
+.c-form__label {
+    position: relative;
+    cursor: pointer;
+    width: calc(100% - 40px);
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    color: #f0f0f0;
+}
+.c-form__input {
+    font-size: 20px;
+    font-family: inherit;
+    width: 100%;
+    height: 90%;
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #000000;
+}
+.c-form__input:focus ~ .c-form__groupLabel, .c-form__input:not(:placeholder-shown) ~ .c-form__groupLabel {
+    font-size: 10px;
+    top: -4px;
+    transform: translateY(0);
+    color: #dcd4d4;
+}
+.c-form__input:focus ~ .c-form__border, .c-form__input:not(:placeholder-shown) ~ .c-form__border, .c-form__input:focus ~ .c-form__next, .c-form__input:not(:placeholder-shown) ~ .c-form__next {
+    transition: 0.3s;
+}
+.c-form__input:focus {
+    cursor: initial;
+}
+.c-form__groupLabel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+}
+.c-form__border {
+    position: absolute;
+    width: 0;
+    height: 3px;
+    color: #25a3ff;
+    background-color: currentColor;
+    transition: 1s 0.2s ease-out;
+}
+.c-form__next {
+    position: absolute;
+    right: -40px;
+    height: 100%;
+    width: 40px;
+    cursor: pointer;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.c-form__nextIcon {
+    position: relative;
+    right: 1.5px;
+    width: 20px;
+    height: 3px;
+    background-color: currentColor;
+}
+.c-form__nextIcon::before, .c-form__nextIcon::after {
+    content: "";
+    position: absolute;
+    right: -1.5px;
+    width: 15px;
+    height: 3px;
+    background-color: inherit;
+}
+.c-form__nextIcon::before {
+    bottom: -1.5px;
+    transform-origin: top right;
+    transform: rotate(45deg);
+}
+.c-form__nextIcon::after {
+    top: -1.5px;
+    transform-origin: bottom right;
+    transform: rotate(-45deg);
+}
+
+
+.overlay3 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    }
+    
+    .overlay3-content {
+    position: relative;
+    top: 4%;
+    width: 25%;
+    margin-top: 30px;
+    
+    }
+    #close{
+      left: 145px;
+      top: 0px;
+    }
+    #close:hover{
+      color: #ff0000;
+    }
+    .overlay3 a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: mintcream;
+    display: block;
+    transition: 0.3s;
+    margin-left: 4rem;
+    }
+    
+    .overlay3 a:hover, .overlay a:focus {
+    color: rgb(15, 34, 157);
+    }
+    .overlay3 a {
+    margin:15px ;
+  margin-left: 4rem;
+      }
+    #bb{
+      background-color: black;
+       width: 50px; margin: 5px ; 
+    }
+    #bb i{
+      color: aliceblue;
+      cursor: pointer;
+    }
+    #bb i:hover{
+      color: rgb(15, 34, 157);
+    }
+    .overlay3 .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+    .overlay3 a {font-size: 20px}
+    .overlay3 .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }}
+    #p{
+      position: absolute;
+      top: 30px;
+      left: 10px;
+      color:#fff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    #p:hover{
+      color: #72c9ff;
+    }
+
+    #b{
+        text-decoration: none;
+        color: #ff9e02;
+        background-color: #000000;
+        cursor: pointer;
+        font-weight:60px ;
+       font-size: 16px;
+        width: 140px;
+        border-radius: 7px;
+        border-bottom:2.5px solid #ae00ff;
+        border-right:2.5px solid #ae00ff ;
+        border-left: 2.5px solid rgb(0, 255, 179);
+        border-top: 2.5px solid rgb(0, 255, 179);
+        padding: 10px;
+        margin-left: 6.5rem;
+        transition: 1.5s;
+    }
+    #b:hover{
+        transition: 1.5s;
+        border-top:2.5px solid #ae00ff;
+        border-left:2.5px solid #ae00ff ;
+        border-right: 2.5px solid rgb(0, 255, 179);
+        border-bottom: 2.5px solid rgb(0, 255, 179);
+
+    }
