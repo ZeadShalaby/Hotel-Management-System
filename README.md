@@ -6,7 +6,7 @@
     <img src="https://i.imgur.com/ctHdBeA.png" alt="Logo" width="230" height="170">
   </a>
 
-<h3 align="center">Online_Shop_Store</h3>
+<h3 align="center">Hotel-Management-System</h3>
   <p align="center">
     Project With PHP 
     <br/>
