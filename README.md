@@ -19,7 +19,7 @@
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
-* [Hotel-Management-System](#Hotel-Management-System)
+* [Hotel-System](#Hotel-System)
 * [Installation-Process](#Installation-Process)
 * [Contributing](#contributing)
 * [Authors](#authors)
@@ -77,7 +77,7 @@
 
 </p>
 
-## Hotel-Management-System
+## Hotel-System
 * The ultimate Guest Management platform - Online check-in, Guest App, Upsells &amp; much more! Increase Guest Happiness, Cut Down Operational Costs, and Generate Additional...more comfort and easy for all Guest
 
 
