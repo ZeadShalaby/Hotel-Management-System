@@ -38,7 +38,7 @@
 📌Home Page:
 
 
-<img src="https://i.imgur.com/VkR25tj.png" alt="project(Coise-User)" width="900" height="380">
+<img src="https://i.imgur.com/akzoBU1.png" alt="project(Coise-User)" width="900" height="380">
 
 
 
@@ -57,7 +57,7 @@
 
 
 
-📌Electronics's Page: 
+📌Registerition-Class Page: 
 
 
 
@@ -65,11 +65,11 @@
 
 
 
-📌Top Selling's Page: 
+📌Checkout Page: 
 
 
 
-<img src="https://i.imgur.com/akzoBU1.png" alt="project(Coise-User)" width="900" height="380">
+<img src="https://i.imgur.com/VkR25tj.png" alt="project(Coise-User)" width="900" height="380">
 
 
 
