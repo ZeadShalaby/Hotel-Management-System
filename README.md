@@ -42,7 +42,7 @@
 
 
 
-📌Login-Admin Page:
+📌Login Page:
 
 
 <img src="https://i.imgur.com/4Pbliqh.png" alt="project(Coise-User)" width="900" height="380">
@@ -57,7 +57,7 @@
 
 
 
-📌Registerition-Class Page: 
+📌Reserve Class Page: 
 
 
 
