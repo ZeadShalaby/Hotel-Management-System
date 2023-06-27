@@ -49,7 +49,7 @@
 
 
 
-📌Login-User Page: 
+📌Reserve Class Page: 
 
 
 
@@ -57,7 +57,7 @@
 
 
 
-📌Reserve Class Page: 
+📌Footer Page: 
 
 
 
