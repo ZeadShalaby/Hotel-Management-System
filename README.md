@@ -112,8 +112,7 @@
 Don't forget to (Follow) and press the (Star) button. If you want to save this project in your profile, then click on the (Fork) button from the top right side
 
 ## visit other repository with below link
-https://github.com/ZeadShalaby/Online-Shop-Store
-
+https://github.com/ZeadShalaby/Hotel-Management-System
 ## Contributing
 
 Any contributions you make are **greatly appreciated**.
