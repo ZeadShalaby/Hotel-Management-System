@@ -138,6 +138,6 @@ Any contributions you make are **greatly appreciated**.
 
 
 ## Contact with me
-info.zeadshalaby@gmail.com
+info.zeadshalaby1@gmail.com
 
 
